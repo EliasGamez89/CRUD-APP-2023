@@ -1,9 +1,16 @@
 html{font-size: 100px;}
 
+@font-face {
+    font-family: 'ARCADE';
+    src: url("./Fonts/arcade/ARCADE.TTF") format('truetype');
+
+}
+
 
 h1 {
     color: blue;
     font-size: .7em;
+    font-family: 'ARCADE';
     
 }
 
@@ -39,4 +46,12 @@ td:hover{
 
 th:hover{
     background-color: blueviolet;
+}
+
+
+#filter{
+    font-size: .7em;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
 }
