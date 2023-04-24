@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+
+
+<body>
+
+
+
+    <header>
+        <h1>Inventory App</h1>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Genre</th>
+                    <th>Platform</th>
+                    <th>Release Date</th>
+                    <th>Qty</th>
+                    <th>
+                        <button onclick="Restore" id="filter">
+                            Restore Filter
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Super Mario Bros 3D All-Stars Collection</td>
+                    <td>Adventure</td>
+                    <td>Nintendo Switch</td>
+                    <td>10/27/2017</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Metroid Dread</td>
+                    <td>Action/Adventure</td>
+                    <td>Nintendo Switch</td>
+                    <td>10/08/2021</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Kirby Star Allies </td>
+                    <td>Action/Adventure </td>
+                    <td>Nintendo Switch</td>
+                    <td>03/16/2017</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Halo Infinite </td>
+                    <td>FPS/Action</td>
+                    <td>Xbox</td>
+                    <td>12/08/2021</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Call of Duty Vanguard</td>
+                    <td>FPS/Action</td>
+                    <td>Xbox</td>
+                    <td>11/05/2021</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Street Fighter V </td>
+                    <td>Fighting</td>
+                    <td>Xbox</td>
+                    <td>02/16/2016</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tekken</td>
+                    <td>Fighting</td>
+                    <td>Playstation</td>
+                    <td>06/02/2017</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Elden Ring</td>
+                    <td>Action/Adventure</td>
+                    <td>Playstation</td>
+                    <td>02/25/2022</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The last of Us : Part 2</td>
+                    <td>Adventure</td>
+                    <td>Playstation</td>
+                    <td>06/19/2020</td>
+                    <td>( )</td>
+                    <td>
+                        <button onclick="editQty">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="remove">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <form>
+                            <label for="addGame">Name Of The Game</label>
+                            <br>
+                            <input type="text" id="addGame" name="game">
+
+                            <button type="submit">Add</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add-Genre">
+                            <label for="addGenre">Genre</label>
+                            <br>
+                            <select id="addGenre"name="add-Genre">
+                                <option value="">Select Genre</option>
+                                <option value="Action">Action</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Action/Adventure">Action/Adventure</option>
+                                <option value="FPS">FPS</option>
+                                <option value="RPG">RPG</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td>
+                        <form id="add-Console">
+                            <label for="addConsole">Console</label>
+                            <br>
+                            <select id="addConsole"name="add-Console">
+                                <option value="">Select Console</option>
+                                <option value="Xbox">Xbox</option>
+                                <option value="Nintendo">Nintendo</option>
+                                <option value="Playstation">Playstation</option>
+                            </select>
+                    </td>
+                    <td>
+                        <form>
+                            <label for="date">Release Date</label>
+                            <br>
+                            <input type="text" id="date" name="releaseDate">
+
+                            <button type="submit">Add</button>
+                        </form>
+                    </td>
+
+                    <td>
+                        <form>
+                            <label for="quantity">Quantity<label>
+                            <br>
+                            <input type="text" id="Qty" name="quantity">
+
+                            <button type="submit">Add</button>
+                    </td>
+
+                    <td>
+                        <form>
+                           
+
+                            <button type="submit">Add Item</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+    </section>
+
+    <script src="./script.js">
+        
+    </script>
+
+</body>
+
+
+
+</html>
